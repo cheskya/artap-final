@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+      <div class="thought-container">
+        <div class="thought-container__thought" id="js-thought-1">My friends invited me to go out with them. Should I go?</div>
+        <div class="thought-container__choice-container" id="js-choices-1">
+          <button class="thought-container__choice" onclick="changeThought('#js-thought-1', '#js-choices-1')">Yes</button>
+          <button class="thought-container__choice" onclick="changeThought('#js-thought-1', '#js-choices-1')">No</button>
+        </div>
+      </div>
+      <div class="person-container"><img src="assets/person.gif" id="js-person"></div>
+      <div class="thought-container">
+        <div class="thought-container__thought" id="js-thought-2">I have a quiz next week. Do I study now?</div>
+        <div class="thought-container__choice-container" id="js-choices-2">
+          <button class="thought-container__choice" onclick="changeThought('#js-thought-2', '#js-choices-2')">Yes</button>
+          <button class="thought-container__choice" onclick="changeThought('#js-thought-2', '#js-choices-2')">No</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

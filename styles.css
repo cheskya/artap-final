@@ -1,0 +1,94 @@
+@font-face {
+  font-family: PatrickHand;
+  src: url(assets/fonts/patrick-hand.ttf)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* background: #212128; */
+  background: url(assets/bg.gif);
+  font-family: PatrickHand, Calibri;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.thought-container, .person-container {
+  padding: 0rem;
+}
+
+/* for thoughts (actual thoughts and their choices) */
+
+.thought-container {
+  /* border: 2px solid blue; */
+  width: 18rem;
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+}
+
+.thought-container__thought, .thought-container__choice {
+  background: white;
+}
+
+.thought-container__thought {
+  background: #C7D3FF;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+}
+
+.thought-container__choice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thought-container__choice {
+  background: #E9EEFF;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+  /* overwrite default button styling */
+  font-family: PatrickHand;
+  border: none;
+}
+
+.thought-container__choice:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+/* for person (graphics may change depending on choice) */
+
+.person-container {
+  align-self: flex-end;
+  height: fit-content;
+  width: fit-content;
+  padding-bottom: 0;
+}
+
+.person-container img {
+  height: 25rem;
+  width: auto;
+}
